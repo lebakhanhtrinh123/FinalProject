@@ -1,0 +1,60 @@
+.promotion-carousel .slick-track {
+    display: flex;
+    padding: 10px 0;
+  }
+  
+  .promotion-carousel .slick-slide {
+    transition: transform 0.3s ease;
+    height: inherit;
+  }
+  
+  .promotion-carousel .slick-slide > div {
+    height: 100%;
+    padding: 0 8px;
+  }
+  
+  .promotion-carousel .slick-dots li button {
+    background: #d1d5db;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  
+  .promotion-carousel .slick-dots li.slick-active button {
+    background: #db2777;
+    width: 16px;
+    border-radius: 10px;
+  }
+  
+  .promotion-carousel .slick-dots {
+    bottom: -25px;
+  }
+  
+  .promotion-carousel .slick-arrow {
+    display: none !important;
+  }
+
+  .promotion-carousel .slick-slide:hover {
+    z-index: 1;
+  }
+
+  @keyframes slideAnimation {
+    from {
+      transform: translateX(10px);
+      opacity: 0.7;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .promotion-carousel .slick-active {
+    animation: slideAnimation 0.5s ease-out;
+  }
+
+  @media (max-width: 768px) {
+    .promotion-carousel .slick-dots {
+      bottom: -20px;
+    }
+  }

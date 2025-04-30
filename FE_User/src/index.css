@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (forced-colors: active) {
+    * {
+        forced-color-adjust: none;
+    }
+}
